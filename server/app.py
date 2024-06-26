@@ -31,7 +31,7 @@ def pet_by_id(id):
                 }
         status = 200
     else:
-        body = {'message':f'Pet {id} ot found'}
+        body = {'message':f'Pet {id} not found'}
         status = 404
     return make_response(body, status)
 
